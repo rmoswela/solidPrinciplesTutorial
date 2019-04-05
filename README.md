@@ -1,11 +1,13 @@
 # SOLID PRINCIPLES TUTORIAL
 This is a beginner tutorial for learning and understanding the basics of SOLID principles and how they can be applied when designing a class in **object oriented programming.**
-This are principles that have been pioneered and championed by [Robert "Uncle Bob" Martin](https://en.wikipedia.org/wiki/Robert_C._Martin). 
+
+These are principles that have been pioneered and championed by [Robert "Uncle Bob" Martin](https://en.wikipedia.org/wiki/Robert_C._Martin). 
 
 ## Why SOLID Principles?
 
 The principles expose dependency management aspects of object oriented design as opposed to the conceptualization and modelling aspects. 
 Dependency Management is an issue that most of us have faced. 
+
 Whenever we bring up on our screens a nasty batch of tangled legacy code is the results of poor dependency management.
 This poor dependency managment leads to code that is hard to change, fragile, and non-reusable.
 
