@@ -51,4 +51,4 @@ _Because it is stupid, ugly, requires work everytime there is a derivative class
 
 ### VIOLATIONS OF LSP
 
-Here are some pratical example of **_LSP_** is violated. Find the [code examples here](../../src/LSP)
+Here are some pratical example of **_LSP_** is violated. Find the [code examples here](../../src/lsp)
