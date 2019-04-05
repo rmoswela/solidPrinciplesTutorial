@@ -21,15 +21,15 @@ Therefore these principles, are at the foundation of the ilities that software d
 ## List Of the Pricinples
 The following is a list of the five priciples of class design and within each link there is a description and examples how they can be used
 
-- ###### [Single Responsibility Principle](documentation/srp)
+- ###### [Single Responsibility Principle](documentation/srp.md)
 
-- ###### [Open Closed Principle](documentation/ocp)
+- ###### [Open Closed Principle](documentation/ocp.md)
 
-- ###### [Liskov Substitution Principle](documentation/lsp)
+- ###### [Liskov Substitution Principle](documentation/lsp.md)
 
-- ###### [Interface Segregation Principle](documentation/isp)
+- ###### [Interface Segregation Principle](documentation/isp.md)
 
-- ###### [Dependency Inversion Principle](documentation/dip)
+- ###### [Dependency Inversion Principle](documentation/dip.md)
 
 
 ## Authors
