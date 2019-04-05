@@ -46,9 +46,9 @@ void func (d)
 ```
 
 Why is ☝️ wrong?
-_Because it is stupid, ugly, requires work everytime there is a derivative class and most importantly it violates not only the **LSP** but also the **[Open Closed Principle](documentation/ocp.md)**_
+_Because it is stupid, ugly, requires work everytime there is a derivative class and most importantly it violates not only the **LSP** but also the **[Open Closed Principle](../documentation/ocp.md)**_
 
 
 ### VIOLATIONS OF LSP
 
-Here are some pratical example of **_LSP_** is violated. Find the [code examples here](src/Liskov Substitution Principle)
+Here are some pratical example of **_LSP_** is violated. Find the [code examples here](../src/LSP)
