@@ -49,13 +49,13 @@ Why is ☝️ wrong?
 _Because it is stupid, ugly, requires work everytime there is a derivative class and most importantly it violates not only the **LSP** but also the **[Open Closed Principle](../documentation/ocp.md)**_
 
 
-### Violations OF Liskov Substitution Principle
+### Violations of Liskov Substitution Principle
 
-Here are some pratical example of **_LSP_** is violated. Find the [code examples here](../src/lsp)
+Here are some pratical example of **_LSP_** when is violated. Find the [code examples here](../src/lsp)
 
-We see that **Shape.cs** has no abstract functions therefore classes **Square** and **Circle** derive from it and both have **_Draw()_** function but don't override **Shape's** **_DrawShape()_**.
+We see that **Shape** has no abstract functions therefore classes **Square** and **Circle** derive from it and both have **_Draw()_** function but don't override **Shape's** **_DrawShape(Shape s)_**.
 
-This means **Circle** and **Square** are not substitutable for **Shape** hence **_DrawShape(Shape s)_** must inspect all **Shape** arguments to determine their _types_ and call the appropriate **_Draw()_**.
+This means **Circle** and **Square** are not substitutable for **Shape** hence **_DrawShape(Shape s)_** must inspect all **Shape** arguments to determine their _types_ and then call the appropriate **_Draw()_** based on the _type_.
 
 ```
 - As Square and Circle are not substitutable for Shape they are then violating the LSP.
