@@ -51,7 +51,7 @@ _Because it is stupid, ugly, requires work everytime there is a derivative class
 
 ### Violations of Liskov Substitution Principle
 
-Here are some pratical example of **_LSP_** when is violated. Find the [code examples here](../src/lsp)
+Here are some pratical example of **_LSP_** when is violated. Find the [code examples here](../src/lsp/violations)
 
 We see that **Shape** has no abstract functions therefore classes **Square** and **Circle** derive from it and both have **_Draw()_** function but don't override **Shape's** **_DrawShape(Shape s)_**.
 
