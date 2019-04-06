@@ -6,7 +6,7 @@ This principle states that derived classes must be substitutable for their base 
 
 This means that if some function takes a parameter of type **_BaseClass_** then it should be legal to pass in an instance of **_DerivedClass_** to that function as an argument.
 
-#### EXAMPLE
+### Example
 
 Presume that we have a function **_func_** that takes as its parameter a reference to some base class **_BaseClass_**.
 Then passed to **_func_** as an argument in the form of **_BaseClass_** is the derivative class **_DerivedClass_**.
@@ -49,6 +49,19 @@ Why is ☝️ wrong?
 _Because it is stupid, ugly, requires work everytime there is a derivative class and most importantly it violates not only the **LSP** but also the **[Open Closed Principle](../documentation/ocp.md)**_
 
 
-### VIOLATIONS OF LSP
+### Violations of Liskov Substitution Principle
 
-Here are some pratical example of **_LSP_** is violated. Find the [code examples here](../src/lsp)
+Here are some pratical example of **_LSP_** when is violated. Find the [code examples here](../src/lsp)
+
+We see that **Shape** has no abstract functions therefore classes **Square** and **Circle** derive from it and both have **_Draw()_** function but don't override **Shape's** **_DrawShape(Shape s)_**.
+
+This means **Circle** and **Square** are not substitutable for **Shape** hence **_DrawShape(Shape s)_** must inspect all **Shape** arguments to determine their _types_ and then call the appropriate **_Draw()_** based on the _type_.
+
+```
+- As Square and Circle are not substitutable for Shape they are then violating the LSP.
+- Also this violation has force a violation of OCP by the DrawShape().
+```
+This leads us to;
+```
+A violation of LSP is in a way a hidden violation of OCP
+```
