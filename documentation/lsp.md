@@ -65,3 +65,11 @@ This leads us to;
 ```
 A violation of LSP is in a way a hidden violation of OCP
 ```
+
+### Lessons from Liskov Substitution Principle
+- A model viewed in isolation cannot be meaningfully validated, its validity can only be expressed in terms of its clients/derivatives.
+- The principles that guide **LSP** are;
+  - Invariants
+  - Design By Contract
+    - Pre conditions
+    - Post conditions
